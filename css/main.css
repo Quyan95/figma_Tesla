@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 60px 58px 43px;
+  align-items: center;
+}
+.logo {
+
+}
+.menu_1, .menu_2 {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.menu_2 .menu__item {
+  margin-right: 30px;
+}
+.menu__item {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #000;
+  text-decoration: none;
+  padding-bottom: 6px;
+  border-bottom: 2px transparent solid;
+  transition: 0.3s;
+}
+.menu__item:hover, .menu__item.active{
+  border-bottom: 2px #E51937 solid;
+  color: #e51937;
+}
+.item1 {
+  margin-right: 63px;
+}
+
+.item2 {
+  margin-right: 25px;
+}
+
+.item3 {
+  margin-right: 44px;
+}
+
+.item4 {
+  margin-right: 46px;
+}
+
+.tesla_title {
+  text-align: center;
+  background-image: url(../img/Tesla\ logo\ +\ car.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 594px;
+  margin-bottom: 26px;
+}
+.tesla_title h1{
+  margin: 0;
+  padding: 0;
+  font-size: 90px;
+  font-weight: 600;
+  line-height: 110px;
+}
+.tesla_title p {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0%;
+}
+
+.tesla_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info_block {
+  display: flex;
+  align-items: center;  
+  margin-right: 81px;
+}
+
+.info_block_img {
+  width: 46px;
+  margin-right: 14px;
+}
+
+.info_block_text {
+
+}
+
+.info_block_text1 {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 43px;
+  margin-right: 6px;
+}
+.info_block_text1 span {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.info_block_text2 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.text_drive {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;  
+  margin: 0 40px 6px 24px;
+}
+
+.order {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #E51937;
+  color: #e51937;
+  padding: 11px 40px;
+}
+.order:hover {
+  text-decoration: underline;
+  border-bottom: 2px #e51937 solid;
+  cursor: pointer;
+}
+.go_bottom {
+  margin-top: 37px;
+  text-align: center;
+  display: block;
+}
