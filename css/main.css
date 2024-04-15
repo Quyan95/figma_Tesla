@@ -7,10 +7,20 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
 }
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+/* HEADER */
+.header {
+  margin-bottom: 37px;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -98,7 +108,7 @@ nav {
   width: 46px;
   margin-right: 14px;
 }
-.info_block .width_768 {
+.width_768 {
   display: none;
 }
 
@@ -154,7 +164,123 @@ nav {
   text-align: center;
   display: block;
 }
+/* SECTION 1 */
+.main {
+  height: 900px;
+}
+.main__inner {
+  height: 100%;
+  display: flex;
+}
+
+.left-section {
+  width: 1000px;
+  background-image: url(../img/2013-tesla-model-s-cockpit.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+}
+
+.left-section h2 {
+  font-size: 70px;
+  font-weight: 600;
+  color: #e51937;
+  padding-top: 64px;
+  padding-left: 80px;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 440px;
+  background-color: #E51937;
+  color: #fff;
+  padding: 51px 72px 63px 52px;
+}
+
+.main-top {
+
+}
+
+.main-top h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 11px;  
+}
+
+.main-top p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.features-box {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+}
+.features-box:last-child {
+  margin-bottom: 0;
+} 
+
+.features__img {
+
+}
+
+.features__text-box {
+  padding-top: 9px;
+  padding-bottom: 12px;
+}
+
+.features__title {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.features__title span {
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+.features__title-someCorrect {
+  font-size: 20px;
+}
+
+.features__text {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.main-bottom {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.information {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.information div {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.inverse__button {
+  border: 2px #fff solid;
+  color: #fff;
+}
+/* @MEDIA */
 @media screen and (max-width: 1000px) {
+  /* HEADER */
   .menu__item {
     display: none;
   }
@@ -162,8 +288,10 @@ nav {
     min-height: 500px;
     margin-bottom: 37px;
   }
+  /* Section 1 */
 }
 @media screen and (max-width: 768px) {
+  /* HEADER */
   .container {
     max-width: 768px;
   }
@@ -173,10 +301,10 @@ nav {
   .info_block {
     margin: 0;
   }
-  .info_block .width_1440 {
+  .width_1440 {
     display: none;
   }
-  .info_block .width_768 {
+  .width_768 {
     display: block;
     width: 43px;
     height: 71px;
@@ -223,6 +351,44 @@ nav {
     background-color: #e51937;
     color: #fff;
   }
+  /* SECTION 1 */
+  .main {
+    height: 1000px;
+  }
+  .main__inner {
+    height: 100%;
+    flex-direction: column;
+  }
+  .left-section {
+    width: 100%;
+    height: 500px;
+  }
+  .left-section h2 {
+    text-align: right;
+    padding: 7px;
+    margin-right: 49px;
+  }
+  .right-section {
+    width: 100%;
+    padding: 55px 48px 52px 34px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px 100px;
+    flex-wrap: wrap;
+  }
+  .main-top {
+    max-width: 316px;
+  }
+  .features-box {
+    max-width: 269px;
+  }
+  .main-bottom {
+    gap: 80px;
+  }
+  .inverse__button {
+    border: 2px #fff solid;
+  }
+  
 }
 @media screen and (max-width: 375px) {
   .container {
@@ -268,5 +434,34 @@ nav {
   }
   .order {
     padding: 11px 40px;    
+  }
+  /* SECTION 1 */
+  .main {
+    height: 600px;
+  }
+  .main__inner {
+    height: 100%;
+  }
+  .left-section {
+    height: 300px;
+    background-size: 100%;
+    background-position: center bottom;
+  }
+  .left-section h2 {
+    display: none;
+  }
+  .right-section {
+    padding: 18px 30px 34px 29px;
+  }
+  .main-top {
+  }
+  .main-top h3 {
+    font-size: 30px;
+  }
+  .features {
+    display: none;
+  }
+  .main-bottom {
+    display: none;
   }
 }
